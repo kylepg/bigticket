@@ -2,8 +2,9 @@
 /public/hot
 /public/storage
 /storage/*.key
-/storage/keys
+/storage/certs
 /storage/data
+/storage/keys
 /database/data
 /packages
 /resources/views/sandbox

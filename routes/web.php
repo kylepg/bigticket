@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('login', 'Auth\LoginController@redirectToAzure')->name('login');
+Route::get('login/callback', 'Auth\LoginController@handleAzureCallback')->name('loginCallback');
+
 Route::get('/', function () {
     return view('welcome');
 });
