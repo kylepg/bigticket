@@ -15,7 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('login', 'Auth\LoginController@redirectToAzure')->name('login');
 Route::get('login/callback', 'Auth\LoginController@handleAzureCallback')->name('loginCallback');
+Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/', function () {
+    if(\Auth::check()){
+        dd(\Auth::user());
+    }
     return view('welcome');
+});
+
+Route::get('modules',function(){
+    dd(collect([]));
 });

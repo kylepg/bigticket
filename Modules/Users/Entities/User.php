@@ -1,14 +1,18 @@
 <?php
 
-namespace App;
+namespace Modules\Users\Entities;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Modules\Tags\Entities\Tag;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Traits\HasUuid;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
     use Notifiable;
+    use HasUuid;
+    use HasRoles;
 
     /**
      * The attributes that are mass assignable.
@@ -16,7 +20,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name','uuid','email','provider','provider_id','password',
     ];
 
     /**
@@ -36,4 +40,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     *
+     * RELATIONS
+     *
+     */
+    public function tags()
+    {
+        if(array_key_exists('Tags',Module::allEnabled())){
+            return $this->morphedByMany(Tag::class,'taggable');
+        }
+        return collect([]);
+    }
 }

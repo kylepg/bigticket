@@ -4,8 +4,11 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Foundation\Auth\RedirectsUsers;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Socialite;
+use Modules\Users\Entities\User;
 
 class LoginController extends Controller
 {
@@ -45,8 +48,29 @@ class LoginController extends Controller
      */
     public function handleAzureCallback()
     {
-        $user = Socialite::driver('azure')->user();
+        $azure_user = Socialite::driver('azure')->user();
+        $user = User::firstOrCreate(
+            [
+                'provider' => 'azure',
+                'provider_id' => $azure_user->id
+            ],
+            [
+                'name' => $azure_user->name,
+                'email' => $azure_user->email
+            ]
+        );
+        Auth::login($user);
+        return redirect()->intended(property_exists($this,'redirectTo') ? $this->redirectTo : '/');
+    }
 
-        // $user->token;
+    /**
+     * Log out
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function logout()
+    {
+        Auth::logout();
+        return redirect(property_exists($this,'redirectTo') ? $this->redirectTo : '/');
     }
 }
