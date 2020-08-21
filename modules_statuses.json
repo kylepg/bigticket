@@ -2,5 +2,11 @@
     "Users": true,
     "Stats": true,
     "Content": true,
-    "Tags": true
+    "Tags": true,
+    "Forms": true,
+    "Partnerships": true,
+    "MobileApp": true,
+    "Files": true,
+    "API": true,
+    "Merch": true
 }

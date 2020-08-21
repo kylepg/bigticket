@@ -1,0 +1,23 @@
+{
+    "name": "celtics/forms",
+    "description": "",
+    "authors": [
+        {
+            "name": "Boston Celtics",
+            "email": "digitaldev@celtics.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Forms\\": ""
+        }
+    }
+}

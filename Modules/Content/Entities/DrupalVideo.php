@@ -4,6 +4,7 @@ namespace Modules\Content\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 use GuzzleHttp\Client as GuzzleClient;
+
 use Modules\Content\Entities\DrupalAuthor;
 use Modules\Content\Entities\DrupalVideoCaption;
 use Modules\Tags\Entities\Tag;
@@ -35,8 +36,8 @@ class DrupalVideo extends Model
     }
     public function tags()
     {
-        if(array_key_exists('Tags',Module::allEnabled())){
-            return $this->morphedByMany(Tag::class,'taggable');
+        if(array_key_exists('Tags',\Module::allEnabled())){
+            return $this->morphToMany(Tag::class,'taggable');
         }
         return collect([]);
     }

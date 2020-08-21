@@ -4,6 +4,7 @@ namespace Modules\Content\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Traits\HasUuid;
+
 use Modules\Content\Entities\DrupalArticle;
 use Modules\Content\Entities\DrupalGallery;
 use Modules\Content\Entities\DrupalVideo;
@@ -32,8 +33,8 @@ class DrupalAuthor extends Model
     }
     public function tags()
     {
-        if(array_key_exists('Tags',Module::allEnabled())){
-            return $this->morphedByMany(Tag::class,'taggable');
+        if(array_key_exists('Tags',\Module::allEnabled())){
+            return $this->morphToMany(Tag::class,'taggable');
         }
         return collect([]);
     }

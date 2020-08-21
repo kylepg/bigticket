@@ -15,8 +15,9 @@ class CreateLeaguesTable extends Migration
     {
         Schema::create('leagues', function (Blueprint $table) {
             $table->id();
-            $table->string('lid')->unique();
-            $table->string('code')->unique();
+            $table->string('lid');
+            $table->string('code');
+            $table->unique(['lid','code']);
             $table->string('name');
             $table->timestamps();
         });

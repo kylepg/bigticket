@@ -24,8 +24,8 @@ class League extends Model
     }
     public function tags()
     {
-        if(array_key_exists('Tags',Module::allEnabled())){
-            return $this->morphedByMany(Tag::class,'taggable');
+        if(array_key_exists('Tags',\Module::allEnabled())){
+            return $this->morphToMany(Tag::class,'taggable');
         }
         return collect([]);
     }

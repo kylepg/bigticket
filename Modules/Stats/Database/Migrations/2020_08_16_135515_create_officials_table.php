@@ -18,6 +18,7 @@ class CreateOfficialsTable extends Migration
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('jersey')->nullable();
+            $table->boolean('is_active')->default(false);
             $table->timestamps();
         });
     }

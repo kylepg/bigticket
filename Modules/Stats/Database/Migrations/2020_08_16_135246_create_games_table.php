@@ -22,7 +22,7 @@ class CreateGamesTable extends Migration
             $table->string('gid')->unique();
             $table->string('gcode')->unique();
             $table->string('season_type');
-            $table->dateTime('date_time');
+            $table->dateTime('date_time')->nullable();
             $table->tinyInteger('round')->unsigned()->default(0);
             $table->tinyInteger('status')->unsigned()->default(1);
             $table->tinyInteger('period')->unsigned()->default(0);

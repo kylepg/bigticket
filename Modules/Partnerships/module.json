@@ -1,0 +1,13 @@
+{
+    "name": "Partnerships",
+    "alias": "partnerships",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Partnerships\\Providers\\PartnershipsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

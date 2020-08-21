@@ -3,6 +3,10 @@
 namespace Modules\Stats\Entities;
 
 use Illuminate\Database\Eloquent\Model;
+
+use Modules\Content\Entities\DrupalArticle;
+use Modules\Content\Entities\DrupalVideo;
+
 use Modules\Stats\Entities\Arena;
 use Modules\Stats\Entities\BoxScore;
 use Modules\Stats\Entities\Broadcaster;
@@ -10,6 +14,7 @@ use Modules\Stats\Entities\Official;
 use Modules\Stats\Entities\Play;
 use Modules\Stats\Entities\Season;
 use Modules\Stats\Entities\Team;
+
 use Modules\Tags\Entities\Tag;
 
 class Game extends Model
@@ -33,7 +38,7 @@ class Game extends Model
      * The methods to run before returning model.
      *
      */
-    protected $appends = [];
+    protected $appends = ['drupal_videos','drupal_articles'];
 
     /**
      *
@@ -74,8 +79,30 @@ class Game extends Model
     }
     public function tags()
     {
-        if(array_key_exists('Tags',Module::allEnabled())){
-            return $this->morphedByMany(Tag::class,'taggable');
+        if(array_key_exists('Tags',\Module::allEnabled())){
+            return $this->morphToMany(Tag::class,'taggable');
+        }
+        return collect([]);
+    }
+    public function drupalArticles()
+    {
+        if(array_key_exists('Tags',\Module::allEnabled()) && array_key_exists('Content',\Module::allEnabled())){
+            $gid = $this->gid;
+            $articles = DrupalArticle::whereHas('tags',function($query) use ($gid) {
+                $query->where('type','=','game_id')->where('name','=',$gid);
+            });
+            return $articles;
+        }
+        return collect([]);
+    }
+    public function drupalVideos()
+    {
+        if(array_key_exists('Tags',\Module::allEnabled()) && array_key_exists('Content',\Module::allEnabled())){
+            $gid = $this->gid;
+            $videos = DrupalVideo::whereHas('tags',function($query) use ($gid) {
+                $query->where('type','=','game_id')->where('name','=',$gid);
+            });
+            return $videos;
         }
         return collect([]);
     }
@@ -112,6 +139,26 @@ class Game extends Model
     protected function getSeasonYearAttribute()
     {
         return $this->season->start_year;
+    }
+    public function getDrupalArticlesAttribute()
+    {
+        return $this->drupalArticles()->get()->map(function($article){
+            $filtered = [
+                'title' => $article->title,
+                'description' => $article->description
+            ];
+            return $filtered;
+        });
+    }
+    public function getDrupalVideosAttribute()
+    {
+        return $this->drupalVideos()->get()->map(function($video){
+            $filtered = [
+                'title' => $video->title,
+                'description' => $video->description
+            ];
+            return $filtered;
+        });
     }
 
     /**

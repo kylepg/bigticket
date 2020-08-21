@@ -18,14 +18,17 @@ class CreateTeamsTable extends Migration
             $table->string('tid')->unique();
             $table->string('name');
             $table->string('location');
-            $table->string('abbreviation')->unique();
-            $table->unique(['name','location']);
+            $table->string('abbreviation')->nullable();
+            $table->string('division')->nullable();
+            $table->string('conference')->nullable();
             $table->string('primary_color')->default('#000000');
             $table->string('secondary_color')->default('#ffffff');
             $table->bigInteger('league_id')->unsigned()->nullable();
             $table->foreign('league_id')->references('id')->on('leagues');
             $table->bigInteger('arena_id')->unsigned()->nullable();
             $table->foreign('arena_id')->references('id')->on('arenas');
+            $table->unique(['name','location','league_id']);
+            $table->unique(['abbreviation','league_id']);
             $table->timestamps();
         });
     }

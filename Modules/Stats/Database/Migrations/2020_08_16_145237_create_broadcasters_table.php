@@ -19,6 +19,7 @@ class CreateBroadcastersTable extends Migration
             $table->string('type');
             $table->unique(['name','type']);
             $table->string('language')->default('English');
+            $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
     }

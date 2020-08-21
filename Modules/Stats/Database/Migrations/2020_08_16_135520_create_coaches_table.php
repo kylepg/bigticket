@@ -15,7 +15,12 @@ class CreateCoachesTable extends Migration
     {
         Schema::create('coaches', function (Blueprint $table) {
             $table->id();
-
+            $table->string('first_name')->nullable();
+            $table->string('middle_name')->nullable();
+            $table->string('last_name')->nullable();
+            $table->string('nickname')->nullable();
+            $table->string('country')->nullable();
+            $table->boolean('is_active')->default(false);
             $table->timestamps();
         });
     }

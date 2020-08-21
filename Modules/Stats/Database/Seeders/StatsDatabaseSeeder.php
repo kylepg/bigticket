@@ -3,7 +3,6 @@
 namespace Modules\Stats\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Eloquent\Model;
 
 class StatsDatabaseSeeder extends Seeder
 {
@@ -14,8 +13,14 @@ class StatsDatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Model::unguard();
-
-        // $this->call("OthersTableSeeder");
+        ini_set('memory_limit','2048MB');
+        $this->call([
+            LeaguesSeeder::class,
+            TeamsSeeder::class,
+            PlayersSeeder::class,
+            GamesSeeder::class,
+            BoxScoresSeeder::class,
+            PlayByPlaySeeder::class
+        ]);
     }
 }

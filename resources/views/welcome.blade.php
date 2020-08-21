@@ -47,7 +47,7 @@
 
             <div class="w-full text-center">
                 <span class="text-lg">
-                    Laravel
+                    BigTicket
                 </span>
             </div>
         </div>

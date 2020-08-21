@@ -35,12 +35,12 @@ class Team extends Model
     }
     public function players()
     {
-        return $this->hasMany(Player::class);
+        return $this->belongsToMany(Player::class)->withTimestamps();
     }
     public function tags()
     {
-        if(array_key_exists('Tags',Module::allEnabled())){
-            return $this->morphedByMany(Tag::class,'taggable');
+        if(array_key_exists('Tags',\Module::allEnabled())){
+            return $this->morphToMany(Tag::class,'taggable');
         }
         return collect([]);
     }

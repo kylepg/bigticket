@@ -39,6 +39,11 @@ class ContentServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(RouteServiceProvider::class);
+        $this->commands([
+            \Modules\Content\Console\DrupalCheckNew::class,
+            \Modules\Content\Console\DrupalCheckUpdated::class,
+            \Modules\Content\Console\DrupalUpdateTargeted::class
+        ]);
     }
 
     /**

@@ -22,10 +22,12 @@ class CreatePlayersTable extends Migration
             $table->string('nickname')->nullable();
             $table->string('jersey')->nullable();
             $table->string('position')->nullable();
+            $table->date('dob')->nullable();
+            $table->string('prior')->nullable();
             $table->string('country')->nullable();
             $table->smallInteger('height')->unsigned()->nullable();
             $table->smallInteger('weight')->unsigned()->nullable();
-            $table->boolean('active')->default(false);
+            $table->boolean('is_active')->default(false);
             $table->timestamps();
         });
     }

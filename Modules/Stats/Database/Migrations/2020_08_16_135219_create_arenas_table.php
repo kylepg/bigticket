@@ -15,7 +15,12 @@ class CreateArenasTable extends Migration
     {
         Schema::create('arenas', function (Blueprint $table) {
             $table->id();
-
+            $table->string('name');
+            $table->string('city');
+            $table->string('state');
+            $table->unique(['name','city','state']);
+            $table->string('country')->nullable();
+            $table->boolean('is_nba_arena')->default(false);
             $table->timestamps();
         });
     }
