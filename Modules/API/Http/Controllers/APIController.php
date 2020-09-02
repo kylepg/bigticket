@@ -4,6 +4,7 @@ namespace Modules\API\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Stats\Entities\League;
 use Modules\Stats\Entities\Season;
 use Modules\Stats\Entities\Game;
 
@@ -13,8 +14,9 @@ class APIController extends Controller
      * Return JSON for playoffs index
      * @return Renderable
      */
-    public function getPlayoffsFeed($start_year)
+    public function getPlayoffsFeed($league_name,$start_year)
     {
+        $league_name = 'nba';
         if(!empty($start_year)){
             $season = Season::where('start_year',$start_year)->with(['games' => function($query){
                 // $query->where('season_type','=','post');
