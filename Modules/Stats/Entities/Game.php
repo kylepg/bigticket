@@ -124,6 +124,10 @@ class Game extends Model
     {
         return $this->teams()->wherePivot('role','=','home')->first();
     }
+    protected function getCelticsAttribute()
+    {
+        return $this->teams()->where('abbreviation','=','BOS')->first();
+    }
     protected function getOpponentAttribute()
     {
         return $this->teams()->where('abbreviation','!=','BOS')->first();

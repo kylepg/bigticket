@@ -64,6 +64,20 @@ return [
             'url' => env('AWS_URL'),
             'endpoint' => env('AWS_ENDPOINT'),
         ],
+        'nba_s3' => [
+            'driver' => 's3',
+            'key' => env('NBA_S3_KEY'),
+            'secret' => env('NBA_S3_SECRET'),
+            'region' => env('NBA_S3_REGION'),
+            'bucket' => env('NBA_S3_BUCKET'),
+        ],
+        'kore_s3' => [
+            'driver' => 's3',
+            'key' => env('KORE_S3_KEY'),
+            'secret' => env('KORE_S3_SECRET'),
+            'region' => env('KORE_S3_REGION'),
+            'bucket' => env('KORE_S3_BUCKET'),
+        ],
 
     ],
 
