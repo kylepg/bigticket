@@ -1,0 +1,13 @@
+{
+    "name": "Social",
+    "alias": "social",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Social\\Providers\\SocialServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

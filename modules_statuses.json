@@ -8,5 +8,7 @@
     "MobileApp": true,
     "Files": true,
     "API": true,
-    "Merch": true
+    "Merch": true,
+    "Fans": true,
+    "Social": true
 }

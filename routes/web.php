@@ -38,6 +38,17 @@ Route::get('s3',function(){
     dd($files);
 });
 
+Route::get('redis',function(){
+    try{
+        $redis = Illuminate\Support\Facades\Redis::connect();
+        return 'redis working';
+    } catch (\Predis\Connection\ConnectionException $e){
+        dd($e->getMessage());
+        return 'error connection redis';
+    }
+    //dd($redis);
+});
+
 Route::get('brothers',function(){
     $games = Modules\Stats\Entities\Game::where('status','=',3)->whereHas('officials',function(Illuminate\Database\Eloquent\Builder $query){
         $query->where('first_name','=','Tony')->where('last_name','=','Brothers');

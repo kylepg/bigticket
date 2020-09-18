@@ -1,0 +1,13 @@
+{
+    "name": "Fans",
+    "alias": "fans",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Fans\\Providers\\FansServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
