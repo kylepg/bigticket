@@ -1,0 +1,258 @@
+{
+    "webinars": [
+        {
+            "name": "ticket-sales",
+            "title": "Ticket Sales",
+            "videoId": "teams/celtics/2020/10/07/3442803/1602085569100-Ticket-Sales-3442803",
+            "guests": [
+                {
+                    "name": "Mackenzie Henderson",
+                    "title": "Vice President of Ticket Sales"
+                },
+                {
+                    "name": "Chrissy Leach",
+                    "title": "Sr. Group Sales Manager"
+                },
+                {
+                    "name": "Nick Cacici",
+                    "title": "Sr. Premium Sales Account Executive"
+                }
+            ]
+        },
+        {
+            "name": "marketing-social-media-digital",
+            "title": "Marketing, Social Media, & Digital",
+            "videoId": "teams/celtics/2020/10/07/3442802/1602085512224-digital-content-3442802",
+            "guests": [
+                {
+                    "name": "Kara Walker",
+                    "title": "Vice President of Marketing & Content Strategy"
+                },
+                {
+                    "name": "Bill Ramos",
+                    "title": "Director of Digital Development & Innovation"
+                },
+                {
+                    "name": "Eileen O’Malley",
+                    "title": "Manager of Marketing and Social Media"
+                },
+                {
+                    "name": "Alex Herko",
+                    "title": "Sr. Manager of Content Strategy"
+                }
+            ]
+        },
+        {
+            "name": "ce-biz-dev-cp",
+            "title": "Community Engagement, Business Development, & Corporate Partnerships",
+            "videoId": "teams/celtics/2020/10/07/3442781/1602083677670-CE-CP-Biz-Dev-3442781",
+            "guests": [
+                {
+                    "name": "Dave Hoffman",
+                    "title": "Vice President of Community Engagement"
+                },
+                {
+                    "name": "Nicole Federico",
+                    "title": "Vice President of Partner Development"
+                },
+                {
+                    "name": "Kara Keena",
+                    "title": "Director of Corporate Partnerships Activation"
+                },
+                {
+                    "name": "Richie Smith",
+                    "title": "Director of Analytics and Strategy"
+                }
+            ]
+        },
+        {
+            "name": "cltx",
+            "title": "CLTX Gaming",
+            "videoId": "teams/celtics/2020/10/07/3442784/1602083762431-CLTX-3442784",
+            "guests": [
+                {
+                    "name": "Jim Ferris",
+                    "title": "Managing Director of CLTX Gaming"
+                },
+                {
+                    "name": "Michael Wan",
+                    "title": "Team Operations Manager of CLTX Gaming"
+                },
+                {
+                    "name": "Imogen Fairs",
+                    "title": "CLTX Social Media Manager"
+                }
+            ]
+        },
+        {
+            "name": "member-experience",
+            "title": "Member Experience",
+            "videoId": "teams/celtics/2020/10/07/3442661/1602077220086-GMT20200729-170810_Boston-Cel_640x360-3442661",
+            "guests": [
+                {
+                    "name": "Erin Kelly",
+                    "title": "Member Engagement Manager"
+                },
+                {
+                    "name": "Colleen Rossetti",
+                    "title": "Sr. VIP Member Experience Executive"
+                },
+                {
+                    "name": "McKenzie Pezze",
+                    "title": "Member Experience Executive"
+                },
+                {
+                    "name": "Tyler Marcotte",
+                    "title": "Member Experience Executive"
+                }
+            ]
+        }
+    ],
+    "bops": [
+        {
+            "name": "tessa-caffrey",
+            "display_name": "Tessa Caffrey",
+            "title": "VP Corporate Events & Hospitality"
+        },
+        {
+            "name": "peter-fayette",
+            "display_name": "Peter Fayette",
+            "title": "Director of Operations"
+        },
+        {
+            "name": "allison-feaster",
+            "display_name": "Allison Feaster",
+            "title": "VP of Player Development & Organizational Growth"
+        },
+        {
+            "name": "leanda-helms",
+            "display_name": "Leanda Helms",
+            "title": "Art Director & Strategist"
+        },
+        {
+            "name": "duane-johnson",
+            "display_name": "Duane Johnson",
+            "title": "Director of Ticket Operations"
+        },
+        {
+            "name": "erin-kelly",
+            "display_name": "Erin Kelly",
+            "title": "Member Engagement Manager"
+        },
+        {
+            "name": "andy-mannix",
+            "display_name": "Andy Mannix",
+            "title": "Assistant Equipment Manager"
+        },
+        {
+            "name": "bill-ramos",
+            "display_name": "Bill Ramos",
+            "title": "Director of Digital Development & Innovation"
+        }
+    ],
+    "blogs": [
+        {
+            "name": "teamwork",
+            "title": "Teamwork",
+            "author": "Kara Walker",
+            "author_title": "Vice President, Marketing & Content Strategy"
+        },
+        {
+            "name": "standing-out-during-an-internship",
+            "title": "Standing Out During an Internship",
+            "author": "Logan Dickinson",
+            "author_title": "Senior Coordinator, Corporate Partnerships Activation"
+        },
+        {
+            "name": "7-strategies-to-help-you-stand-out-from-the-crowd",
+            "title": "7 Strategies to Help You Stand Out From the Crowd",
+            "author": "David Cohen",
+            "author_title": "Director, Member Experience & Retention"
+        }
+    ],
+    "panels": [
+        {
+            "week": 3,
+            "type": "Live Speaker",
+            "title": "Teamwork",
+            "description": "",
+            "endDate": "2020-10-30",
+            "videoId": null,
+            "registrations": [
+                {
+                    "date": "2020-10-30",
+                    "link": "https://celtics.zoom.us/webinar/register/WN_75dlTF4ETaeQ3Whnq0eOAA"
+                }
+            ],
+            "guests": [
+                {
+                    "name": "Sam Taub",
+                    "title": "Director, Youth Basketball & Development"
+                },
+                {
+                    "name": "Andrew Sherwin",
+                    "title": "Sr. Director, Business Intelligence & Operations"
+                },
+                {
+                    "name": "Anna Dyakiv",
+                    "title": "Sr. VIP Member Experience Executive"
+                }
+            ]
+        },
+        {
+            "week": 2,
+            "type": "Small Group",
+            "title": "Week 2 | Q&A Breakout Sessions",
+            "description": "Q&A breakout sessions provide the opportunity to network directly with Celtics staff in a virtual, small group setting. Register for one or multiple sessions below.",
+            "endDate": "2020-10-06",
+            "videoId": null,
+            "registrations": [
+                {
+                    "date": "10-11 AM – Tue, Oct 20",
+                    "link": "https://celtics.zoom.us/meeting/register/tJIkduisqjovGNwXBPDyoMhjLB5j52Sd2IMy"
+                },
+                {
+                    "date": "1-2 PM – Wed, Oct 21",
+                    "link": "https://celtics.zoom.us/meeting/register/tJYvdemuqT4uHdUvZZy0f7DxnoinDIUbds1l"
+                },
+                {
+                    "date": "1-2 PM – Fri, Oct 23",
+                    "link": "https://celtics.zoom.us/meeting/register/tJApcemgqzIrHNFVDCC6Paw8L_jQmfFbT7Th"
+                }
+            ],
+            "guests": null
+        },
+        {
+            "week": 1,
+            "type": "Live Speaker",
+            "title": "Standing Out From the Crowd",
+            "description": "",
+            "endDate": "2020-10-06",
+            "videoId": "teams/celtics/2020/10/07/3442803/1602085569100-Ticket-Sales-3442803",
+            "registrations": [
+                {
+                    "date": "",
+                    "link": "https://celtics.zoom.us/webinar/register/WN_LVu8_xBXQGiGjjaC8WMcXA?mkt_tok:eyJpIjoiWkRsaE5tTTNZVFZrWVdGaiIsInQiOiJGTXdpanN3MGwxaGZNcCs3eFwvNWNMMlBwVElYZkRwcXhMbVM2azZQOU5EVGxicVBubHozZ2I5WUpmOVpCM1RUcmtNU29cL1FEcmRIck9FNHV4THgyZ3VBPT0ifQ%3D%3D"
+                }
+            ],
+            "guests": [
+                {
+                    "name": "Paul Cacciatore",
+                    "title": "VP of Member Experience & Arena Operations"
+                },
+                {
+                    "name": "Jeff Twiss",
+                    "title": "VP of Media Services/Alumni Relations"
+                },
+                {
+                    "name": "Carley Lenahan",
+                    "title": "Sr. Manager of Live Events"
+                },
+                {
+                    "name": "Andrew Nguyen",
+                    "title": "Business Intelligence Analyst"
+                }
+            ]
+        }
+    ]
+}

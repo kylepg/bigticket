@@ -1,0 +1,1505 @@
+{
+    "order": [
+        {
+            "title": "Draft Pick 1",
+            "related_video": [
+                {
+                    "title": "Timberwolves win Draft Lottery",
+                    "url": "/video/2020/08/20/20200820-nba-draft-lottery-4-1"
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 1,
+            "field_team": "Minnesota Timberwolves",
+            "team_tricode": "MIN",
+            "team_url": "/draft/2020/teams/MIN",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "https://publish.nba.com/images/vod01/video/2020/08/20/e3d1d439-90e9-41fd-8696-b2df3961825a.nba_1_1280x720.jpg?w=1920&h=1080",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 2",
+            "related_video": [
+                {
+                    "title": "Best fit for James Wiseman?",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 2,
+            "field_team": "Golden State Warriors",
+            "team_tricode": "GSW",
+            "team_url": "/draft/2020/teams/GSW",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 3",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 3,
+            "field_team": "Charlotte Hornets",
+            "team_tricode": "CHA",
+            "team_url": "/draft/2020/teams/CHA",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 4",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 4,
+            "field_team": "Chicago Bulls",
+            "team_tricode": "CHI",
+            "team_url": "/draft/2020/teams/CHI",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 5",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 5,
+            "field_team": "Cleveland Cavaliers",
+            "team_tricode": "CLE",
+            "team_url": "/draft/2020/teams/CLE",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 6",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 6,
+            "field_team": "Atlanta Hawks",
+            "team_tricode": "ATL",
+            "team_url": "/draft/2020/teams/ATL",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 7",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 7,
+            "field_team": "Detroit Pistons",
+            "team_tricode": "DET",
+            "team_url": "/draft/2020/teams/DET",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 8",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 8,
+            "field_team": "New York Knicks",
+            "team_tricode": "NYK",
+            "team_url": "/draft/2020/teams/NYK",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 9",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 9,
+            "field_team": "Washington Wizards",
+            "team_tricode": "WAS",
+            "team_url": "/draft/2020/teams/WAS",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 10",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 10,
+            "field_team": "Phoenix Suns",
+            "team_tricode": "PHX",
+            "team_url": "/draft/2020/teams/PHX",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 11",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 11,
+            "field_team": "San Antonio Spurs",
+            "team_tricode": "SAS",
+            "team_url": "/draft/2020/teams/SAS",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 12",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 12,
+            "field_team": "Sacramento Kings",
+            "team_tricode": "SAC",
+            "team_url": "/draft/2020/teams/SAC",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 13",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 13,
+            "field_team": "New Orleans Pelicans",
+            "team_tricode": "NOP",
+            "team_url": "/draft/2020/teams/NOP",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 14",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 14,
+            "field_team": "Boston Celtics",
+            "team_tricode": "BOS",
+            "team_url": "/draft/2020/teams/BOS",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 15",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 15,
+            "field_team": "Orlando Magic",
+            "team_tricode": "ORL",
+            "team_url": "/draft/2020/teams/ORL",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 16",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 16,
+            "field_team": "Portland Trail Blazers",
+            "team_tricode": "POR",
+            "team_url": "/draft/2020/teams/POR",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 17",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 17,
+            "field_team": "Minnesota Timberwolves",
+            "team_tricode": "MIN",
+            "team_url": "/draft/2020/teams/MIN",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 18",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 18,
+            "field_team": "Dallas Mavericks",
+            "team_tricode": "DAL",
+            "team_url": "/draft/2020/teams/DAL",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 19",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 19,
+            "field_team": "Brooklyn Nets",
+            "team_tricode": "BKN",
+            "team_url": "/draft/2020/teams/BKN",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 20",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 20,
+            "field_team": "Miami Heat",
+            "team_tricode": "MIA",
+            "team_url": "/draft/2020/teams/MIA",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 21",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 21,
+            "field_team": "Philadelphia 76ers",
+            "team_tricode": "PHI",
+            "team_url": "/draft/2020/teams/PHI",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 22",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 22,
+            "field_team": "Denver Nuggets",
+            "team_tricode": "DEN",
+            "team_url": "/draft/2020/teams/DEN",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 23",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 23,
+            "field_team": "Utah Jazz",
+            "team_tricode": "UTA",
+            "team_url": "/draft/2020/teams/UTA",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 24",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 24,
+            "field_team": "Milwaukee Bucks",
+            "team_tricode": "MIL",
+            "team_url": "/draft/2020/teams/MIL",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 25",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 25,
+            "field_team": "Oklahoma City Thunder",
+            "team_tricode": "OKC",
+            "team_url": "/draft/2020/teams/OKC",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 26",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 26,
+            "field_team": "Boston Celtics",
+            "team_tricode": "BOS",
+            "team_url": "/draft/2020/teams/BOS",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 27",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 27,
+            "field_team": "New York Knicks",
+            "team_tricode": "NYK",
+            "team_url": "/draft/2020/teams/NYK",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 28",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 28,
+            "field_team": "Los Angeles Lakers",
+            "team_tricode": "LAL",
+            "team_url": "/draft/2020/teams/LAL",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 29",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 29,
+            "field_team": "Toronto Raptors",
+            "team_tricode": "TOR",
+            "team_url": "/draft/2020/teams/TOR",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 30",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "1",
+            "field_pick_number": 30,
+            "field_team": "Boston Celtics",
+            "team_tricode": "BOS",
+            "team_url": "/draft/2020/teams/BOS",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 31",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 31,
+            "field_team": "Dallas Mavericks",
+            "team_tricode": "DAL",
+            "team_url": "/draft/2020/teams/DAL",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 32",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 32,
+            "field_team": "Charlotte Hornets",
+            "team_tricode": "CHA",
+            "team_url": "/draft/2020/teams/CHA",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 33",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 33,
+            "field_team": "Minnesota Timberwolves",
+            "team_tricode": "MIN",
+            "team_url": "/draft/2020/teams/MIN",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 34",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 34,
+            "field_team": "Philadelphia 76ers",
+            "team_tricode": "PHI",
+            "team_url": "/draft/2020/teams/PHI",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 35",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 35,
+            "field_team": "Sacramento Kings",
+            "team_tricode": "SAC",
+            "team_url": "/draft/2020/teams/SAC",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 36",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 36,
+            "field_team": "Philadelphia 76ers",
+            "team_tricode": "PHI",
+            "team_url": "/draft/2020/teams/PHI",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 37",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 37,
+            "field_team": "Washington Wizards",
+            "team_tricode": "WAS",
+            "team_url": "/draft/2020/teams/WAS",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 38",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 38,
+            "field_team": "New York Knicks",
+            "team_tricode": "NYK",
+            "team_url": "/draft/2020/teams/NYK",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 39",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 39,
+            "field_team": "New Orleans Pelicans",
+            "team_tricode": "NOP",
+            "team_url": "/draft/2020/teams/NOP",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 40",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 40,
+            "field_team": "Memphis Grizzlies",
+            "team_tricode": "MEM",
+            "team_url": "/draft/2020/teams/MEM",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 41",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 41,
+            "field_team": "San Antonio Spurs",
+            "team_tricode": "SAS",
+            "team_url": "/draft/2020/teams/SAS",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 42",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 42,
+            "field_team": "New Orleans Pelicans",
+            "team_tricode": "NOP",
+            "team_url": "/draft/2020/teams/NOP",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 43",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 43,
+            "field_team": "Sacramento Kings",
+            "team_tricode": "SAC",
+            "team_url": "/draft/2020/teams/SAC",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 44",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 44,
+            "field_team": "Chicago Bulls",
+            "team_tricode": "CHI",
+            "team_url": "/draft/2020/teams/CHI",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 45",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 45,
+            "field_team": "Orlando Magic",
+            "team_tricode": "ORL",
+            "team_url": "/draft/2020/teams/ORL",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 46",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 46,
+            "field_team": "Portland Trail Blazers",
+            "team_tricode": "POR",
+            "team_url": "/draft/2020/teams/POR",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 47",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 47,
+            "field_team": "Boston Celtics",
+            "team_tricode": "BOS",
+            "team_url": "/draft/2020/teams/BOS",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 48",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 48,
+            "field_team": "Golden State Warriors",
+            "team_tricode": "GSW",
+            "team_url": "/draft/2020/teams/GSW",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 49",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 49,
+            "field_team": "Philadelphia 76ers",
+            "team_tricode": "PHI",
+            "team_url": "/draft/2020/teams/PHI",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 50",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 50,
+            "field_team": "Atlanta Hawks",
+            "team_tricode": "ATL",
+            "team_url": "/draft/2020/teams/ATL",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 51",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 51,
+            "field_team": "Golden State Warriors",
+            "team_tricode": "GSW",
+            "team_url": "/draft/2020/teams/GSW",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 52",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 52,
+            "field_team": "Sacramento Kings",
+            "team_tricode": "SAC",
+            "team_url": "/draft/2020/teams/SAC",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 53",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 53,
+            "field_team": "Oklahoma City Thunder",
+            "team_tricode": "OKC",
+            "team_url": "/draft/2020/teams/OKC",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 54",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 54,
+            "field_team": "Indiana Pacers",
+            "team_tricode": "IND",
+            "team_url": "/draft/2020/teams/IND",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 55",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 55,
+            "field_team": "Brooklyn Nets",
+            "team_tricode": "BKN",
+            "team_url": "/draft/2020/teams/BKN",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 56",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 56,
+            "field_team": "Charlotte Hornets",
+            "team_tricode": "CHA",
+            "team_url": "/draft/2020/teams/CHA",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 57",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 57,
+            "field_team": "LA Clippers",
+            "team_tricode": "LAC",
+            "team_url": "/draft/2020/teams/LAC",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 58",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 58,
+            "field_team": "Philadelphia 76ers",
+            "team_tricode": "PHI",
+            "team_url": "/draft/2020/teams/PHI",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 59",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 59,
+            "field_team": "Toronto Raptors",
+            "team_tricode": "TOR",
+            "team_url": "/draft/2020/teams/TOR",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+            "prospect_headshot": ""
+        },
+        {
+            "title": "Draft Pick 60",
+            "related_video": [
+                {
+                    "title": "",
+                    "url": ""
+                }
+            ],
+            "prospect_position": "",
+            "prospect_college": "",
+            "prospect_country": "",
+            "prospect_height": "",
+            "prospect_weight": "",
+            "prospect_url": "",
+            "field_draft_prospect": "",
+            "field_pick_round": "2",
+            "field_pick_number": 60,
+            "field_team": "New Orleans Pelicans",
+            "team_tricode": "NOP",
+            "team_url": "/draft/2020/teams/NOP",
+            "field_team_traded_to": "",
+            "field_pick_info": "",
+            "video_image": "",
+
+            "prospect_headshot": ""
+        }
+    ]
+}

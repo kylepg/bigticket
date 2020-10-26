@@ -1,0 +1,22 @@
+Main
+	Navigation
+		Celtics Logo
+		Draft Logo
+		Picks
+	Video
+	Draft Order w/ Picks
+
+Panel
+	Current Pick:
+	Social
+		Chat
+            <i class="fad fa-comment-alt-dots"></i>	
+		Twitter
+            <i class="fab fa-twitter"></i>
+		Instagram
+            <i class="fab fa-instagram"></i>
+		Trivia
+            <i class="far fa-question-square"></i>
+		Scouting Reports
+            <i class="fad fa-id-badge"></i>
+

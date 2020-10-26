@@ -10,5 +10,6 @@
     "API": true,
     "Merch": true,
     "Fans": true,
-    "Social": true
+    "Social": true,
+    "Render": true
 }

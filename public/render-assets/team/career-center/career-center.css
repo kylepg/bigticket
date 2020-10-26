@@ -1,0 +1,1375 @@
+/* --------------------------------- IMPORTS -------------------------------- */
+
+/* ------------------------------ ASPECT RATIO ------------------------------ */
+
+/* ---------------------------------- VIDEO --------------------------------- */
+
+/* USAGE:
+
+<div class="video">
+    <script class="_nbaVideoPlayerScout" 
+            data-team="celtics" 
+            data-videoId="/video/teams/celtics/2018/10/10/2288457/1539179070084-COM20_CoachJrCeltics_2kWS_H264-2288457"
+            data-width="768" data-height="732" src="https://www.nba.com/scout/team/cvp/videoPlayerScout.js">
+    </script>
+</div>
+
+*/
+
+/* --------------------------- PARQUET BACKGROUND --------------------------- */
+
+/* ---------------------------- FULL WIDTH LAYOUT --------------------------- */
+
+/* ------------------------------- BREAKPOINTS ------------------------------ */
+
+/*=================================
+=            BOOTSTRAP            =
+==================================*/
+
+.page-header-ad {
+  display: none !important;
+}
+
+#content {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#content .content {
+  width: 100% !important;
+}
+
+#content .content .panel-flexible .page-header-ad {
+  display: none;
+}
+
+#content .content .panel-flexible .panel-flexible-inside .panels-flexible-region {
+  width: 100% !important;
+}
+
+#content .content .panel-display {
+  padding: 0;
+}
+
+/*! Flickity v2.2.1
+https://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus {
+  outline: none;
+}
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+
+.flickity-button {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  color: #333;
+}
+
+.flickity-button:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19f;
+}
+
+.flickity-button:active {
+  opacity: 0.6;
+}
+
+.flickity-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+
+.flickity-button-icon {
+  fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* vertically center */
+  transform: translateY(-50%);
+}
+
+.flickity-prev-next-button.previous {
+  left: 10px;
+}
+
+.flickity-prev-next-button.next {
+  right: 10px;
+}
+
+/* right to left */
+
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots {
+  direction: rtl;
+}
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+.flickity-viewport {
+  transition: height 0.2s;
+}
+
+/* ----------------------------- Parallax Scroll ---------------------------- */
+
+/* smaller, dark, rounded square */
+
+.flickity-button {
+  background: #333;
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (max-width: 900px) {
+  .flickity-button {
+    display: none;
+  }
+}
+
+.flickity-button:hover {
+  background: #00b664;
+}
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+/* icon color */
+
+.flickity-button-icon {
+  fill: white;
+}
+
+/* position outside */
+
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+
+.flickity-prev-next-button.next {
+  right: -40px;
+}
+
+footer {
+  margin-top: 0 !important;
+}
+
+#career-center {
+  /* ------------------------- SECTION: LOGIN OVERLAY ------------------------- */
+  /* --------------------------------- HEADER --------------------------------- */
+  /* ---------------------------------- BLURB --------------------------------- */
+  /* ---------------------------- SECTION: WEBINARS --------------------------- */
+  /* ------------------------- SECTION: STAY IN TOUCH ------------------------- */
+  /* ----------------------------- SECTION: FOOTER ---------------------------- */
+  /* -------------------------------- CAROUSEL -------------------------------- */
+  /* -------------------------------- CAROUSEL -------------------------------- */
+  /* --------------------------------- SPINNER -------------------------------- */
+}
+
+#career-center:not([data-logged-in]) .only-if-logged-in,
+#career-center:not([data-logged-in]) .only-if-not-logged-in {
+  display: none !important;
+}
+
+#career-center[data-logged-in=false] .only-if-logged-in {
+  display: none;
+}
+
+#career-center[data-logged-in=false] .carousel .carousel-cell[data-locked=true] .card-inner .img-wrap img {
+  filter: saturate(0) contrast(1.15) brightness(110%) blur(30px) !important;
+}
+
+#career-center[data-logged-in=false] .carousel .carousel-cell[data-locked=true] {
+  pointer-events: none;
+}
+
+#career-center[data-logged-in=false] .carousel .carousel-cell[data-locked=true] .card-inner .fa-lock {
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+#career-center[data-logged-in=false] .carousel .carousel-cell[data-locked=true] .card-inner .fa-play {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+#career-center[data-logged-in=false] .carousel .carousel-cell[data-locked=true] .card-inner:hover .img-wrap img {
+  filter: saturate(0) contrast(1.15) brightness(110%) blur(30px) !important;
+}
+
+#career-center[data-logged-in=false] .carousel .carousel-cell[data-locked=true] .card-inner:hover .green-shading {
+  opacity: 0.5;
+}
+
+#career-center[data-logged-in=true] .only-if-not-logged-in {
+  display: none !important;
+}
+
+#career-center .futura {
+  font-family: "futura-pt";
+}
+
+#career-center .overlay {
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0em 1em;
+  opacity: 0;
+  transition: opacity 300ms ease;
+  padding-top: 2em;
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+#career-center .overlay .overlay-container {
+  max-width: 720px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  #career-center .overlay {
+    padding-top: 2em;
+  }
+}
+
+#career-center .overlay.active {
+  display: flex;
+}
+
+#career-center .overlay.fade-in {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  #career-center .overlay#video-overlay {
+    display: none !important;
+  }
+}
+
+#career-center .overlay .shade {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+#career-center section#login-overlay {
+  margin-top: 5em;
+}
+
+#career-center section#login-overlay svg {
+  width: 100%;
+}
+
+#career-center section#login-overlay svg path {
+  fill: #008348;
+}
+
+#career-center section#login-overlay .close-button {
+  font-size: 1.5em;
+  color: #272727;
+  align-self: flex-end;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#career-center section#login-overlay .close-button:hover {
+  opacity: 0.75;
+}
+
+#career-center section#login-overlay .login-modal > p {
+  text-align: center;
+  color: #fff;
+}
+
+#career-center section#login-overlay .inner {
+  background: #fafafa;
+  padding: 2em;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+  position: relative;
+  max-width: 400px;
+  margin-bottom: 1em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#career-center section#login-overlay .inner p {
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+#career-center section#login-overlay .inner .error-message,
+#career-center section#login-overlay .inner .valid-message {
+  color: #d63d3d;
+  font-size: 0.9em;
+  margin: 1em 0em 0em 0em;
+  display: none;
+}
+
+#career-center section#login-overlay .inner button {
+  text-align: center;
+  padding: 0;
+  font-size: 1.5em;
+  font-family: "futura-pt";
+  background-color: #008348;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: 300ms ease;
+}
+
+#career-center section#login-overlay .inner button:hover {
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (min-width: 901px) {
+  #career-center section#login-overlay .inner button:hover {
+    background-color: #00b664;
+  }
+}
+
+#career-center section[data-section=header] {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  background: #006d3c;
+  overflow: hidden;
+  max-height: 650px;
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+#career-center section[data-section=header]::before {
+  content: "";
+  width: 1px;
+  margin-left: -1px;
+  float: left;
+  height: 0;
+  padding-top: 37.6210979548%;
+}
+
+#career-center section[data-section=header]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 900px) {
+  #career-center section[data-section=header] {
+    max-height: 800px;
+  }
+}
+
+#career-center section[data-section=header] .bg {
+  width: 100%;
+  max-width: 1500px;
+  z-index: 10;
+  filter: brightness(0.85);
+}
+
+#career-center section[data-section=header] .bg[data-mobile] {
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (min-width: 901px) {
+  #career-center section[data-section=header] .bg[data-mobile] {
+    display: none;
+  }
+}
+
+#career-center section[data-section=header] .bg[data-desktop] {
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (max-width: 900px) {
+  #career-center section[data-section=header] .bg[data-desktop] {
+    display: none;
+  }
+}
+
+#career-center section[data-section=header] .bg-blur {
+  position: absolute;
+  width: 100%;
+  filter: brightness(0.85) blur(10px);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+#career-center section[data-section=header] .shader {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+1,000000+100&0+82,1+100 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0) 82%, black 100%);
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  z-index: 20;
+}
+
+#career-center section[data-section=header] .inner {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#career-center section[data-section=header] .inner svg {
+  margin: 2.5em 0em;
+  z-index: 15;
+  height: 35%;
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (max-width: 900px) {
+  #career-center section[data-section=header] .inner svg {
+    height: 40%;
+  }
+}
+
+#career-center section[data-section=header] .registrant-name {
+  z-index: 15;
+  text-align: center;
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+#career-center section[data-section=header] .registrant-name .logout-button {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#career-center section[data-section=header] .register-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+}
+
+#career-center section[data-section=header] .register-wrap p {
+  z-index: 15;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (max-width: 900px) {
+  #career-center section[data-section=header] .register-wrap p {
+    font-size: 2em;
+  }
+}
+
+#career-center section[data-section=header] .register-wrap .register-button {
+  color: #049956;
+  font-size: 3em;
+  font-family: "futura-pt";
+  font-weight: 600;
+  padding: 0.5em 0.75em;
+  margin: 0em 2em;
+  border: 1px solid #008348;
+  border-radius: 0.3em;
+  position: relative;
+  background-color: #fafafa;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: 200ms ease;
+  text-align: center;
+  white-space: nowrap;
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (max-width: 900px) {
+  #career-center section[data-section=header] .register-wrap .register-button {
+    padding: 0.5em 1.5em;
+    font-size: 1.5em;
+  }
+}
+
+#career-center section[data-section=header] .register-wrap .register-button:hover {
+  background-color: white;
+}
+
+#career-center section[data-section=header] .register-wrap p {
+  text-align: center;
+  color: #fff;
+  font-size: 1em;
+  margin: 0.5em 0em;
+  font-weight: 400;
+}
+
+#career-center section[data-section=header] .register-wrap p span {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#career-center section[data-section=blurb] {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  background: #dfe1e2;
+  padding: 0em 2em;
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+@media (max-width: 900px) {
+  #career-center section[data-section=blurb] {
+    padding: 0em 1em;
+  }
+}
+
+#career-center section[data-section=blurb]:before {
+  content: "";
+  background: url(https://www.nba.com/resources/static/team/v2/celtics/cdn/site/backgrounds/parquet.svg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: saturate(0) brightness(2000%);
+  opacity: 0.15;
+  background-size: 325px;
+  z-index: 0;
+}
+
+#career-center section[data-section=blurb] .inner {
+  max-width: 1000px;
+  padding: 2em 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (max-width: 900px) {
+  #career-center section[data-section=blurb] .inner {
+    flex-direction: column;
+  }
+}
+
+#career-center section[data-section=blurb] .inner > div {
+  position: relative;
+}
+
+#career-center section[data-section=blurb] .inner > div:first-child {
+  width: 60%;
+  padding: 1em 3em 1em 1em;
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (max-width: 900px) {
+  #career-center section[data-section=blurb] .inner > div:first-child {
+    width: 100%;
+  }
+}
+
+#career-center section[data-section=blurb] .inner > div:nth-child(2) {
+  width: 40%;
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (max-width: 900px) {
+  #career-center section[data-section=blurb] .inner > div:nth-child(2) {
+    width: 100%;
+  }
+}
+
+#career-center section[data-section=blurb] .inner p:first-child {
+  font-weight: bold;
+  font-size: 1.75em;
+  line-height: 1.5;
+  margin-bottom: 0.25em;
+}
+
+#career-center section[data-section=blurb] .img-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#career-center section[data-section=blurb] .img-wrap img {
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  position: relative;
+}
+
+#career-center section[data-section=blurb] .img-wrap:after {
+  content: "";
+  background: #008348;
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  left: -0.75em;
+  bottom: -0.75em;
+}
+
+#career-center section[data-section=webinars] {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  min-height: 100px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#career-center .content-row {
+  padding: 3em 0em 5em 0em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#career-center .content-row .inner {
+  width: 100%;
+  max-width: 1000px;
+}
+
+#career-center .content-row:nth-child(even) {
+  background: rgba(0, 131, 72, 0.294);
+}
+
+#career-center .content-row:nth-child(odd) {
+  background: rgba(0, 131, 72, 0.176);
+}
+
+#career-center .content-row h2 {
+  font-size: 2.25em;
+  font-weight: bold;
+  margin: 0;
+  color: #212121;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+  padding: 0em 0.5em;
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (max-width: 900px) {
+  #career-center .content-row h2 {
+    font-size: 2em;
+  }
+}
+
+#career-center .content-row h2 i {
+  margin-right: 0.5em;
+  color: #008348;
+}
+
+#career-center section[data-section=stay-connected] {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  min-height: 100px;
+  justify-content: center;
+  align-items: center !important;
+  background-color: #008348;
+}
+
+#career-center section[data-section=stay-connected] h2 {
+  font-size: 2.25em;
+  font-weight: bold;
+  margin: 0;
+  color: #212121;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 0em 0.5em;
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (max-width: 900px) {
+  #career-center section[data-section=stay-connected] h2 {
+    font-size: 2.75em;
+    margin-bottom: 0.5em;
+  }
+}
+
+#career-center section[data-section=stay-connected] h2 i {
+  margin-right: 0.5em;
+  color: #cacaca;
+}
+
+#career-center section[data-section=stay-connected] .inner {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (max-width: 900px) {
+  #career-center section[data-section=stay-connected] .inner {
+    flex-direction: column;
+    padding: 2em 1em;
+  }
+}
+
+#career-center section[data-section=stay-connected] .divide {
+  height: 100%;
+  width: 1px;
+  background: #fff;
+}
+
+#career-center section[data-section=stay-connected] .social-wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  padding: 0em 0.5em;
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (max-width: 900px) {
+  #career-center section[data-section=stay-connected] .social-wrap {
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  #career-center section[data-section=stay-connected] .social-wrap a {
+    margin-top: 1em;
+  }
+}
+
+#career-center section[data-section=stay-connected] .social-wrap a.subscribe {
+  font-family: "futura-pt";
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: #fff;
+  color: #008348;
+  margin-left: 0.25em;
+  padding: 0.25em 0.75em;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+#career-center section[data-section=stay-connected] .social-wrap a.subscribe i {
+  padding-right: 0.5em;
+}
+
+#career-center section[data-section=stay-connected] .social-wrap a {
+  transition: 300ms;
+  display: flex;
+}
+
+#career-center section[data-section=stay-connected] .social-wrap a:hover {
+  opacity: 0.8;
+}
+
+#career-center section[data-section=stay-connected] .social-wrap a:not(.subscribe) i {
+  padding: 0em 0.4em;
+  color: #fff;
+  font-size: 2.5em;
+}
+
+#career-center section[data-section=footer] {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  min-height: 100px;
+  flex-direction: column;
+}
+
+#career-center section[data-section=footer]:before {
+  content: "";
+  background: url(https://www.nba.com/resources/static/team/v2/celtics/cdn/site/backgrounds/parquet.svg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: saturate(0) brightness(2000%);
+  opacity: 0.15;
+  background-size: 325px;
+  z-index: 0;
+}
+
+#career-center section[data-section=footer] img {
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  border-width: 5px 0px;
+  border-style: solid;
+  border-color: #008348;
+}
+
+#career-center section[data-section=footer] > div {
+  background: #cdd1d2;
+  width: 100%;
+}
+
+#career-center section[data-section=footer] > .inner {
+  width: 100%;
+  padding: 2em 1em;
+  display: flex;
+  justify-content: center;
+}
+
+#career-center section[data-section=footer] > .inner > div {
+  max-width: 1000px;
+}
+
+#career-center section[data-section=footer] > .inner p.questions {
+  font-size: 2.25em;
+  position: relative;
+  z-index: 20;
+  font-family: "futura-pt";
+  text-align: center;
+}
+
+#career-center section[data-section=footer] > .inner p.questions span {
+  font-weight: bold;
+}
+
+#career-center section[data-section=footer] > .inner p.legal {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+#career-center .carousel .card[data-name=tbd],
+#career-center .carousel .carousel-cell[data-name=tbd] {
+  pointer-events: none;
+}
+
+#career-center .carousel .card[data-name=tbd] .img-wrap,
+#career-center .carousel .carousel-cell[data-name=tbd] .img-wrap {
+  padding: 2em;
+}
+
+#career-center .carousel .card[data-name=tbd] .img-wrap img,
+#career-center .carousel .carousel-cell[data-name=tbd] .img-wrap img {
+  filter: saturate(1) contrast(1.15) brightness(110%);
+}
+
+#career-center .carousel .card.webinar.register .time span, #career-center .carousel .card.webinar.upcoming .time span,
+#career-center .carousel .carousel-cell.webinar.register .time span,
+#career-center .carousel .carousel-cell.webinar.upcoming .time span {
+  color: #bb9753;
+}
+
+#career-center .carousel .card.webinar.register .card-bottom, #career-center .carousel .card.webinar.upcoming .card-bottom,
+#career-center .carousel .carousel-cell.webinar.register .card-bottom,
+#career-center .carousel .carousel-cell.webinar.upcoming .card-bottom {
+  background-color: #bb9753;
+}
+
+#career-center .carousel .card.webinar.upcoming,
+#career-center .carousel .carousel-cell.webinar.upcoming {
+  pointer-events: none;
+}
+
+#career-center .carousel .card.webinar.upcoming .time,
+#career-center .carousel .carousel-cell.webinar.upcoming .time {
+  color: #bb9753;
+}
+
+#career-center .carousel .card.webinar.upcoming .card-inner,
+#career-center .carousel .carousel-cell.webinar.upcoming .card-inner {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f856;
+  padding: 0.75em 1em;
+}
+
+#career-center .carousel .card.webinar.upcoming .card-inner p,
+#career-center .carousel .carousel-cell.webinar.upcoming .card-inner p {
+  color: #555555;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+
+#career-center .carousel .card.webinar.upcoming .card-inner p span,
+#career-center .carousel .carousel-cell.webinar.upcoming .card-inner p span {
+  font-weight: 400;
+  display: block;
+}
+
+#career-center .carousel .card.webinar .card-inner .name,
+#career-center .carousel .carousel-cell.webinar .card-inner .name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5em 1em;
+  background: rgba(0, 0, 0, 0.75);
+  font-family: "futura-pt";
+  font-size: 1.25em;
+}
+
+#career-center .carousel .card.webinar .card-inner .card-bottom .title,
+#career-center .carousel .carousel-cell.webinar .card-inner .card-bottom .title {
+  text-align: center;
+  padding: 0;
+  font-size: 2em;
+}
+
+#career-center .carousel .card .card-inner:hover,
+#career-center .carousel .carousel-cell .card-inner:hover {
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (min-width: 901px) {
+  #career-center .carousel .card .card-inner:hover .img-wrap img,
+#career-center .carousel .carousel-cell .card-inner:hover .img-wrap img {
+    filter: none;
+  }
+
+  #career-center .carousel .card .card-inner:hover .green-shading,
+#career-center .carousel .carousel-cell .card-inner:hover .green-shading {
+    opacity: 0;
+  }
+}
+
+#career-center .carousel .card .card-inner .green-shading.loading,
+#career-center .carousel .carousel-cell .card-inner .green-shading.loading {
+  background-image: url("https://www.nba.com/resources/static/team/v2/celtics/cdn/community/jr-celtics/virtual/1.0/images/small-loader.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+#career-center .carousel .card .card-inner .img-wrap::before,
+#career-center .carousel .carousel-cell .card-inner .img-wrap::before {
+  content: "";
+  width: 1px;
+  margin-left: -1px;
+  float: left;
+  height: 0;
+  padding-top: 64.3333333333%;
+}
+
+#career-center .carousel .card .card-inner .img-wrap:after,
+#career-center .carousel .carousel-cell .card-inner .img-wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#career-center .carousel .card .card-inner .img-wrap img,
+#career-center .carousel .carousel-cell .card-inner .img-wrap img {
+  filter: saturate(0) contrast(1.15) brightness(110%);
+}
+
+#career-center .carousel .card .card-inner .img-wrap.loading,
+#career-center .carousel .carousel-cell .card-inner .img-wrap.loading {
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (max-width: 900px) {
+  #career-center .carousel .card .card-inner .img-wrap.loading:after,
+#career-center .carousel .carousel-cell .card-inner .img-wrap.loading:after {
+    content: "";
+    background-image: "https://www.nba.com/resources/static/team/v2/celtics/cdn/community/jr-celtics/virtual/1.0/images/loader.gif";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#career-center .lds-spinner {
+  color: official;
+  width: 64px;
+  height: 64px;
+  transform: scale(0.7);
+  z-index: 100;
+}
+
+#career-center .lds-spinner div {
+  transform-origin: 32px 32px;
+  -webkit-animation: lds-spinner 1.2s linear infinite;
+          animation: lds-spinner 1.2s linear infinite;
+}
+
+#career-center .lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 29px;
+  width: 5px;
+  height: 14px;
+  border-radius: 20%;
+  background: #008348;
+}
+
+#career-center .lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s;
+}
+
+#career-center .lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+#career-center .lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+}
+
+#career-center .lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+}
+
+#career-center .lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+}
+
+#career-center .lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+
+#career-center .lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+#career-center .lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+
+#career-center .lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+#career-center .lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+
+#career-center .lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+}
+
+#career-center .lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+@-webkit-keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ---------------------------------- VIDEO --------------------------------- */
+
+.video-wrap {
+  width: 100%;
+  background: #000;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 7px 13px -5px rgba(0, 0, 0, 0.4);
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+  background: #000;
+  position: relative;
+}
+
+.video-wrap .nba-svp {
+  max-width: 100% !important;
+}
+
+.video-wrap .nba-svp iframe {
+  border: none;
+}
+
+.video-wrap .nbaCvpWrapper {
+  max-width: 9999px !important;
+}
+
+.video-wrap .nbaCvpWrapper {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: #212121;
+  border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+  .video-wrap {
+    margin-bottom: 2em;
+  }
+}
+
+.video-wrap::before {
+  content: "";
+  width: 1px;
+  margin-left: -1px;
+  float: left;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+.video-wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.video-wrap video {
+  cursor: pointer;
+}
+
+.video-wrap:hover {
+  /********  EXTRA SMALL ********/
+  /******** SMALL ********/
+  /********  MEDIUM ********/
+}
+
+@media (min-width: 901px) {
+  .video-wrap:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .video-wrap:hover:before {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.video-wrap .dummy-thumbnail img {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.video-wrap .dummy-thumbnail:after, .video-wrap .dummy-thumbnail:before {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 200ms ease;
+}
+
+.video-wrap .dummy-thumbnail:after {
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-left: 15px solid #fff;
+  margin-left: 9px;
+  z-index: 1001;
+}
+
+.video-wrap .dummy-thumbnail:before {
+  width: 55px;
+  height: 55px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.18);
+  background: rgba(0, 0, 0, 0.42);
+  z-index: 1000;
+}

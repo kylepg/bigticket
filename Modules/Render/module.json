@@ -1,0 +1,13 @@
+{
+    "name": "Render",
+    "alias": "render",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Render\\Providers\\RenderServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

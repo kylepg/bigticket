@@ -1,0 +1,929 @@
+/* --------------------------------- IMPORTS -------------------------------- */
+
+@import "../../../../assets/sass/mixins";
+@include full-width;
+@import "plugins/flickity";
+
+footer {
+    margin-top: 0 !important;
+}
+#career-center {
+    &:not([data-logged-in]) {
+        .only-if-logged-in,
+        .only-if-not-logged-in {
+            display: none !important;
+        }
+    }
+    &[data-logged-in="false"] {
+        .only-if-logged-in {
+            display: none;
+        }
+        .carousel {
+            .carousel-cell[data-locked="true"] .card-inner .img-wrap img {
+                filter: saturate(0) contrast(1.15) brightness(110%) blur(30px) !important;
+            }
+            .carousel-cell[data-locked="true"] {
+                pointer-events: none;
+                .card-inner {
+                    .fa-lock {
+                        display: inline-block !important;
+                        visibility: visible !important;
+                    }
+                    .fa-play {
+                        display: none !important;
+                        visibility: hidden !important;
+                    }
+                    &:hover {
+                        .img-wrap img {
+                            filter: saturate(0) contrast(1.15) brightness(110%)
+                                blur(30px) !important;
+                        }
+                        .green-shading {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &[data-logged-in="true"] {
+        .only-if-not-logged-in {
+            display: none !important;
+        }
+    }
+
+    .futura {
+        font-family: "futura-pt";
+    }
+
+    /* ------------------------- SECTION: LOGIN OVERLAY ------------------------- */
+
+    .overlay {
+        display: none;
+        z-index: 1000;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0em 1em;
+        opacity: 0;
+        transition: opacity 300ms ease;
+        padding-top: 2em;
+
+        .overlay-container {
+            max-width: 720px;
+            width: 100%;
+            // width: 100vw;
+            // height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+            // max-height: 100vh;
+            // max-width: 177.78vh; /* 16/9 = 1.778 */
+            // @include breakpoint(smdown) {
+            //     width: 100vw;
+            // }
+        }
+
+        @include breakpoint(smdown) {
+            padding-top: 2em;
+        }
+
+        &.active {
+            display: flex;
+        }
+
+        &.fade-in {
+            opacity: 1;
+        }
+
+        @include breakpoint(xs) {
+            &#video-overlay {
+                display: none !important;
+            }
+        }
+        .shade {
+            background: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+        }
+    }
+    section#login-overlay {
+        margin-top: 5em;
+
+        svg {
+            path {
+                fill: #008348;
+            }
+            width: 100%;
+        }
+
+        .close-button {
+            font-size: 1.5em;
+            color: #272727;
+            align-self: flex-end;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.75;
+            }
+        }
+        .login-modal > p {
+            text-align: center;
+            color: #fff;
+        }
+
+        .inner {
+            background: #fafafa;
+            padding: 2em;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+                0 1px 3px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 3px;
+            position: relative;
+            max-width: 400px;
+            margin-bottom: 1em;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+
+            p {
+                margin-top: 0.5em;
+                text-align: center;
+            }
+            .error-message,
+            .valid-message {
+                color: rgb(214, 61, 61);
+                font-size: 0.9em;
+                margin: 1em 0em 0em 0em;
+                display: none;
+            }
+
+            button {
+                text-align: center;
+                padding: 0;
+                font-size: 1.5em;
+                font-family: "futura-pt";
+                background-color: #008348;
+                color: #fff;
+                font-weight: bold;
+                padding: 0.5em 1em;
+                border: none;
+                margin-top: 1em;
+                text-transform: uppercase;
+                border-radius: 3px;
+                transition: 300ms ease;
+
+                &:hover {
+                    @include breakpoint(md) {
+                        background-color: lighten(#008348, 10%);
+                    }
+                }
+            }
+        }
+    }
+
+    /* --------------------------------- HEADER --------------------------------- */
+
+    section[data-section="header"] {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        background: rgb(0, 109, 60);
+        overflow: hidden;
+        @include aspect-ratio(1858 699);
+        max-height: 650px;
+        @include breakpoint(smdown) {
+            max-height: 800px;
+        }
+        .bg {
+            width: 100%;
+            max-width: 1500px;
+            z-index: 10;
+            filter: brightness(0.85);
+            // filter: blur(1px);
+
+            &[data-mobile] {
+                @include breakpoint(md) {
+                    display: none;
+                }
+            }
+
+            &[data-desktop] {
+                @include breakpoint(smdown) {
+                    display: none;
+                }
+            }
+        }
+
+        .bg-blur {
+            position: absolute;
+            width: 100%;
+            filter: brightness(0.85) blur(10px);
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 0;
+        }
+
+        .shader {
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+1,000000+100&0+82,1+100 */
+            background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0) 1%,
+                rgba(0, 0, 0, 0) 82%,
+                rgba(0, 0, 0, 1) 100%
+            );
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            height: 0%;
+            bottom: 0;
+            z-index: 20;
+        }
+        .inner {
+            position: absolute;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            svg {
+                margin: 2.5em 0em;
+                z-index: 15;
+                height: 35%;
+                @include breakpoint(smdown) {
+                    height: 40%;
+                }
+            }
+        }
+        .registrant-name {
+            z-index: 15;
+            text-align: center;
+            color: #fff;
+            font-size: 1.25em;
+            font-weight: 400;
+            .logout-button {
+                color: #fff;
+                font-weight: bold;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        .register-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 10;
+            p {
+                z-index: 15;
+                color: #fff;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 2.5em;
+                @include breakpoint(smdown) {
+                    font-size: 2em;
+                }
+            }
+            .register-button {
+                color: #049956;
+                font-size: 3em;
+                font-family: "futura-pt";
+                font-weight: 600;
+                padding: 0.5em 0.75em;
+                margin: 0em 2em;
+                border: 1px solid #008348;
+                border-radius: 0.3em;
+                position: relative;
+                background-color: #fafafa;
+                box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+                    0 1px 3px rgba(0, 0, 0, 0.08);
+                cursor: pointer;
+                transition: 200ms ease;
+                text-align: center;
+                white-space: nowrap;
+
+                @include breakpoint(smdown) {
+                    padding: 0.5em 1.5em;
+                    font-size: 1.5em;
+                    // width: 90%;
+                }
+
+                &:hover {
+                    background-color: lighten(#fff, 10%);
+                }
+            }
+            p {
+                text-align: center;
+                color: #fff;
+                font-size: 1em;
+                margin: 0.5em 0em;
+                font-weight: 400;
+                span {
+                    color: #fff;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    /* ---------------------------------- BLURB --------------------------------- */
+
+    section[data-section="blurb"] {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        background: #dfe1e2;
+        padding: 0em 2em;
+
+        @include breakpoint(smdown) {
+            padding: 0em 1em;
+        }
+        box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+            0 1px 3px rgba(0, 0, 0, 0.08);
+        z-index: 10;
+
+        &:before {
+            content: "";
+            background: url(https://www.nba.com/resources/static/team/v2/celtics/cdn/site/backgrounds/parquet.svg);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            filter: saturate(0) brightness(2000%);
+            opacity: 0.15;
+            background-size: 325px;
+            z-index: 0;
+        }
+        .inner {
+            max-width: 1000px;
+            padding: 2em 0em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            @include breakpoint(smdown) {
+                flex-direction: column;
+            }
+
+            & > div {
+                position: relative;
+
+                &:first-child {
+                    width: 60%;
+                    padding: 1em 3em 1em 1em;
+                    @include breakpoint(smdown) {
+                        width: 100%;
+                    }
+                }
+
+                &:nth-child(2) {
+                    width: 40%;
+                    @include breakpoint(smdown) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            p:first-child {
+                font-weight: bold;
+                font-size: 1.75em;
+                line-height: 1.5;
+                margin-bottom: 0.25em;
+            }
+        }
+
+        .img-wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 100%;
+                box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+                    0 1px 3px rgba(0, 0, 0, 0.08);
+                z-index: 10;
+                position: relative;
+            }
+
+            &:after {
+                content: "";
+                background: #008348;
+                position: absolute;
+                z-index: 0;
+                height: 100%;
+                width: 100%;
+                left: -0.75em;
+                bottom: -0.75em;
+            }
+        }
+    }
+
+    /* ---------------------------- SECTION: WEBINARS --------------------------- */
+
+    section[data-section="webinars"] {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        min-height: 100px;
+        justify-content: center;
+        flex-direction: column;
+        //   &:before {
+        //     content: "";
+        //     background: url(https://www.nba.com/resources/static/team/v2/celtics/cdn/site/backgrounds/parquet.svg);
+        //     width: 100%;
+        //     height: 100%;
+        //     position: absolute;
+        //     filter: saturate(0);
+        //     opacity: 0.05;
+        //     background-size: 325px;
+        //     z-index: 0;
+        //   }
+    }
+
+    .content-row {
+        padding: 3em 0em 5em 0em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .inner {
+            width: 100%;
+            max-width: 1000px;
+        }
+        &:nth-child(even) {
+            background: rgba(0, 131, 72, 0.294);
+        }
+        &:nth-child(odd) {
+            background: rgba(0, 131, 72, 0.176);
+        }
+        h2 {
+            font-size: 2.25em;
+            font-weight: bold;
+            margin: 0;
+            color: #212121;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5em;
+            padding: 0em 0.5em;
+            @include breakpoint(smdown) {
+                font-size: 2em;
+            }
+            i {
+                margin-right: 0.5em;
+                color: #008348;
+            }
+        }
+    }
+
+    /* ------------------------- SECTION: STAY IN TOUCH ------------------------- */
+
+    section[data-section="stay-connected"] {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        min-height: 100px;
+        justify-content: center;
+        align-items: center !important;
+        background-color: #008348;
+
+        h2 {
+            font-size: 2.25em;
+            font-weight: bold;
+            margin: 0;
+            color: #212121;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            padding: 0em 0.5em;
+            @include breakpoint(smdown) {
+                font-size: 2.75em;
+                margin-bottom: 0.5em;
+            }
+            i {
+                margin-right: 0.5em;
+                color: rgb(202, 202, 202);
+            }
+        }
+
+        .inner {
+            display: flex;
+            max-width: 1000px;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            @include breakpoint(smdown) {
+                flex-direction: column;
+                padding: 2em 1em;
+            }
+        }
+
+        .divide {
+            height: 100%;
+            width: 1px;
+            background: #fff;
+        }
+
+        .social-wrap {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex: 1;
+            padding: 0em 0.5em;
+            @include breakpoint(smdown) {
+                justify-content: center;
+                width: 100%;
+                flex-wrap: wrap;
+
+                a {
+                    margin-top: 1em;
+                }
+            }
+
+            a.subscribe {
+                font-family: "futura-pt";
+                font-weight: bold;
+                font-size: 1.5em;
+                background-color: #fff;
+                color: #008348;
+                margin-left: 0.25em;
+                padding: 0.25em 0.75em;
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+
+                i {
+                    padding-right: 0.5em;
+                }
+            }
+
+            a {
+                transition: 300ms;
+                display: flex;
+            }
+            a:hover {
+                opacity: 0.8;
+            }
+
+            a:not(.subscribe) i {
+                padding: 0em 0.4em;
+                color: #fff;
+                font-size: 2.5em;
+            }
+        }
+    }
+    /* ----------------------------- SECTION: FOOTER ---------------------------- */
+
+    section[data-section="footer"] {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        min-height: 100px;
+        flex-direction: column;
+
+        &:before {
+            content: "";
+            background: url(https://www.nba.com/resources/static/team/v2/celtics/cdn/site/backgrounds/parquet.svg);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            filter: saturate(0) brightness(2000%);
+            opacity: 0.15;
+            background-size: 325px;
+            z-index: 0;
+        }
+
+        img {
+            width: 100%;
+            z-index: 10;
+            position: relative;
+            border-width: 5px 0px;
+            border-style: solid;
+            border-color: #008348;
+        }
+
+        & > div {
+            background: #cdd1d2;
+            width: 100%;
+        }
+        & > .inner {
+            width: 100%;
+            padding: 2em 1em;
+            display: flex;
+            justify-content: center;
+
+            & > div {
+                max-width: 1000px;
+            }
+
+            p.questions {
+                font-size: 2.25em;
+                position: relative;
+                z-index: 20;
+                font-family: "futura-pt";
+                span {
+                    font-weight: bold;
+                }
+                text-align: center;
+            }
+
+            p.legal {
+                font-size: 1em;
+                margin-bottom: 1em;
+            }
+        }
+    }
+
+    /* -------------------------------- CAROUSEL -------------------------------- */
+
+    /* -------------------------------- CAROUSEL -------------------------------- */
+
+    .carousel {
+        .card,
+        .carousel-cell {
+            &[data-name="tbd"] {
+                pointer-events: none;
+                .img-wrap {
+                    padding: 2em;
+                    img {
+                        filter: saturate(1) contrast(1.15) brightness(110%);
+                    }
+                }
+            }
+            &.webinar {
+                &.register,
+                &.upcoming {
+                    .time {
+                        span {
+                            color: #bb9753;
+                        }
+                    }
+                    .card-bottom {
+                        background-color: #bb9753;
+                    }
+                }
+                &.upcoming {
+                    .time {
+                        color: #bb9753;
+                    }
+                    pointer-events: none;
+                    .card-inner {
+                        background-color: transparent;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #f8f8f856;
+                        padding: 0.75em 1em;
+                        p {
+                            color: #555555;
+                            font-weight: 600;
+                            margin-bottom: 0.5em;
+                            font-size: 1em;
+                            span {
+                                font-weight: 400;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .card-inner {
+                    .name {
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        padding: 0.5em 1em;
+                        background: rgba(0, 0, 0, 0.75);
+                        font-family: "futura-pt";
+                        font-size: 1.25em;
+                    }
+                    .card-bottom {
+                        .title {
+                            text-align: center;
+                            padding: 0;
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
+            .card-inner {
+                &:hover {
+                    @include breakpoint(md) {
+                        .img-wrap img {
+                            filter: none;
+                        }
+                        .green-shading {
+                            opacity: 0;
+                        }
+                    }
+                }
+                .green-shading {
+                    &.loading {
+                        background-image: url("https://www.nba.com/resources/static/team/v2/celtics/cdn/community/jr-celtics/virtual/1.0/images/small-loader.gif");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: 40px;
+                    }
+                }
+
+                .img-wrap {
+                    @include aspect-ratio(600 386);
+                    img {
+                        filter: saturate(0) contrast(1.15) brightness(110%);
+                    }
+                    &.loading {
+                        @include breakpoint(smdown) {
+                            &:after {
+                                content: "";
+                                background-image: "https://www.nba.com/resources/static/team/v2/celtics/cdn/community/jr-celtics/virtual/1.0/images/loader.gif";
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* --------------------------------- SPINNER -------------------------------- */
+
+    .lds-spinner {
+        color: official;
+        width: 64px;
+        height: 64px;
+        transform: scale(0.7);
+        z-index: 100;
+    }
+
+    .lds-spinner div {
+        transform-origin: 32px 32px;
+        animation: lds-spinner 1.2s linear infinite;
+    }
+
+    .lds-spinner div:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 29px;
+        width: 5px;
+        height: 14px;
+        border-radius: 20%;
+        background: #008348;
+    }
+
+    .lds-spinner div:nth-child(1) {
+        transform: rotate(0deg);
+        animation-delay: -1.1s;
+    }
+
+    .lds-spinner div:nth-child(2) {
+        transform: rotate(30deg);
+        animation-delay: -1s;
+    }
+
+    .lds-spinner div:nth-child(3) {
+        transform: rotate(60deg);
+        animation-delay: -0.9s;
+    }
+
+    .lds-spinner div:nth-child(4) {
+        transform: rotate(90deg);
+        animation-delay: -0.8s;
+    }
+
+    .lds-spinner div:nth-child(5) {
+        transform: rotate(120deg);
+        animation-delay: -0.7s;
+    }
+
+    .lds-spinner div:nth-child(6) {
+        transform: rotate(150deg);
+        animation-delay: -0.6s;
+    }
+
+    .lds-spinner div:nth-child(7) {
+        transform: rotate(180deg);
+        animation-delay: -0.5s;
+    }
+
+    .lds-spinner div:nth-child(8) {
+        transform: rotate(210deg);
+        animation-delay: -0.4s;
+    }
+
+    .lds-spinner div:nth-child(9) {
+        transform: rotate(240deg);
+        animation-delay: -0.3s;
+    }
+
+    .lds-spinner div:nth-child(10) {
+        transform: rotate(270deg);
+        animation-delay: -0.2s;
+    }
+
+    .lds-spinner div:nth-child(11) {
+        transform: rotate(300deg);
+        animation-delay: -0.1s;
+    }
+
+    .lds-spinner div:nth-child(12) {
+        transform: rotate(330deg);
+        animation-delay: 0s;
+    }
+
+    @keyframes lds-spinner {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+}
+
+/* ---------------------------------- VIDEO --------------------------------- */
+
+.video-wrap {
+    width: 100%;
+    @include nba-video;
+    @include breakpoint(smdown) {
+        margin-bottom: 2em;
+    }
+    background: #000;
+    position: relative;
+    @include aspect-ratio(16 9);
+    video {
+        cursor: pointer;
+    }
+
+    &:hover {
+        @include breakpoint(md) {
+            background: rgba(black, 0.7);
+
+            &:before {
+                background: rgba(black, 0.7);
+            }
+        }
+    }
+
+    .dummy-thumbnail img {
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    .dummy-thumbnail {
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            cursor: pointer;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: 200ms ease;
+        }
+
+        &:after {
+            width: 0;
+            height: 0;
+            border: 12px solid transparent;
+            border-left: 15px solid #fff;
+            margin-left: 9px;
+            z-index: 1001;
+        }
+
+        &:before {
+            width: 55px;
+            height: 55px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 4px rgba(black, 0.18);
+            background: rgba(black, 0.42);
+            z-index: 1000;
+        }
+    }
+}

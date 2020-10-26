@@ -1,0 +1,147 @@
+/*!
+ * repeat-string <https://github.com/jonschlinkert/repeat-string>
+ *
+ * Copyright (c) 2014-2015, Jon Schlinkert.
+ * Licensed under the MIT License.
+ */
+
+/*! http://mths.be/he v0.5.0 by @mathias | MIT license */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module attach-ware
+ * @fileoverview Middleware with configuration.
+ * @example
+ *   var ware = require('attach-ware')(require('ware'));
+ *
+ *   var middleware = ware()
+ *     .use(function (context, options) {
+ *         if (!options.condition) return;
+ *
+ *         return function (req, res, next) {
+ *           res.x = 'hello';
+ *           next();
+ *         };
+ *     }, {
+ *         'condition': true
+ *     })
+ *     .use(function (context, options) {
+ *         if (!options.condition) return;
+ *
+ *         return function (req, res, next) {
+ *           res.y = 'world';
+ *           next();
+ *         };
+ *     }, {
+ *         'condition': false
+ *     });
+ *
+ *   middleware.run({}, {}, function (err, req, res) {
+ *     res.x; // "hello"
+ *     res.y; // undefined
+ *   });
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module mdast
+ * @version 2.3.2
+ * @fileoverview Markdown processor powered by plugins.
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module mdast:defaults
+ * @version 2.3.2
+ * @fileoverview Default values for parse and
+ *  stringification settings.
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module mdast:parse
+ * @version 2.3.2
+ * @fileoverview Parse a markdown document into an
+ *   abstract syntax tree.
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module mdast:stringify
+ * @version 2.3.2
+ * @fileoverview Compile an abstract syntax tree into
+ *   a markdown document.
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module mdast:utilities
+ * @version 2.3.2
+ * @fileoverview Collection of tiny helpers useful for
+ *   both parsing and compiling markdown.
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module unified
+ * @fileoverview Parse / Transform / Compile / Repeat.
+ */
+
+/**
+ * @author Titus Wormer
+ * @copyright 2015 Titus Wormer
+ * @license MIT
+ * @module vfile
+ * @fileoverview Virtual file format to attach additional
+ *   information related to processed input.  Similar to
+ *   `wearefractal/vinyl`.  Additionally, `VFile` can be
+ *   passed directly to ESLint formatters to visualise
+ *   warnings and errors relating to a file.
+ * @example
+ *   var VFile = require('vfile');
+ *
+ *   var file = new VFile({
+ *     'directory': '~',
+ *     'filename': 'example',
+ *     'extension': 'txt',
+ *     'contents': 'Foo *bar* baz'
+ *   });
+ *
+ *   file.toString(); // 'Foo *bar* baz'
+ *   file.filePath(); // '~/example.txt'
+ *
+ *   file.move({'extension': 'md'});
+ *   file.filePath(); // '~/example.md'
+ *
+ *   file.warn('Something went wrong', {'line': 2, 'column': 3});
+ *   // { [~/example.md:2:3: Something went wrong]
+ *   //   name: '~/example.md:2:3',
+ *   //   file: '~/example.md',
+ *   //   reason: 'Something went wrong',
+ *   //   line: 2,
+ *   //   column: 3,
+ *   //   fatal: false }
+ */
+
+/**
+ * @license
+ * Lodash <https://lodash.com/>
+ * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
+ * Released under MIT license <https://lodash.com/license>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ */

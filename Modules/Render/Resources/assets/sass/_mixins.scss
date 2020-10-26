@@ -1,0 +1,252 @@
+/* ------------------------------ ASPECT RATIO ------------------------------ */
+
+@mixin aspect-ratio($ratio: 1 1) {
+  &::before {
+    content: "";
+    width: 1px;
+    margin-left: -1px;
+    float: left;
+    height: 0;
+    padding-top: percentage(nth($ratio, 2) / nth($ratio, 1));
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* ---------------------------------- VIDEO --------------------------------- */
+
+@mixin nba-video() {
+  background: #000;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 7px 13px -5px rgba(0, 0, 0, 0.4);
+  .nba-svp {
+    max-width: 100% !important;
+  }
+  .nba-svp iframe {
+    border: none;
+  }
+  .nbaCvpWrapper {
+    max-width: 9999px !important;
+  }
+  .nbaCvpWrapper {
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    background-color: #212121;
+    border-radius: 5px;
+  }
+}
+
+/* USAGE:
+
+<div class="video">
+    <script class="_nbaVideoPlayerScout" 
+            data-team="celtics" 
+            data-videoId="/video/teams/celtics/2018/10/10/2288457/1539179070084-COM20_CoachJrCeltics_2kWS_H264-2288457"
+            data-width="768" data-height="732" src="https://www.nba.com/scout/team/cvp/videoPlayerScout.js">
+    </script>
+</div>
+
+*/
+
+/* --------------------------- PARQUET BACKGROUND --------------------------- */
+
+@mixin parquet-background() {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.nba.com/resources/static/team/v2/celtics/cdn/site/backgrounds/parquet.svg");
+  filter: brightness(1) saturate(0);
+  opacity: 0.05;
+  background-size: 200px;
+}
+
+@mixin page-parquet-background() {
+  .page {
+    background-image: url("https://www.nba.com/resources/static/team/v2/celtics/cdn/site/backgrounds/parquet-light.svg");
+    background-size: 400px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+  }
+}
+
+/* ---------------------------- FULL WIDTH LAYOUT --------------------------- */
+
+@mixin full-width() {
+  .page-header-ad {
+    display: none !important;
+  }
+  #content {
+    width: 100% !important;
+    max-width: 100% !important;
+    .content {
+      width: 100% !important;
+      .panel-flexible {
+        .page-header-ad {
+          display: none;
+        }
+        .panel-flexible-inside .panels-flexible-region {
+          width: 100% !important;
+        }
+      }
+      .panel-display {
+        padding: 0;
+      }
+    }
+  }
+}
+
+/* ------------------------------- BREAKPOINTS ------------------------------ */
+
+@mixin breakpoint($min: 0, $max: 0) {
+  $type: type-of($min);
+
+  @if $type==string {
+    /********  EXTRA SMALL ********/
+    @if $min==xs {
+      @media (max-width: 600px) {
+        @content;
+      }
+    }
+
+    /******** SMALL ********/
+    @if $min==smdown {
+      @media (max-width: 900px) {
+        @content;
+      }
+    }
+
+    @if $min==smonly {
+      @media (min-width: 601px) and (max-width: 900px) {
+        @content;
+      }
+    } @else if $min==sm {
+      @media (min-width: 601px) {
+        @content;
+      }
+    }
+
+    /********  MEDIUM ********/
+    @if $min==mddown {
+      @media (max-width: 1200px) {
+        @content;
+      }
+    }
+
+    @if $min==mdonly {
+      @media (min-width: 901px) and (max-width: 1200px) {
+        @content;
+      }
+    } @else if $min==md {
+      @media (min-width: 901px) {
+        @content;
+      }
+    }
+
+    /********  LARGE ********/
+    @else if $min==lg {
+      @media (min-width: 1201px) {
+        @content;
+      }
+    }
+  } @else if $type==number {
+    $query: "all" !default;
+
+    @if $min !=0 and $max !=0 {
+      $query: "(min-width: #{$min}) and (max-width: #{$max})";
+    } @else if $min !=0 and $max==0 {
+      $query: "(min-width: #{$min})";
+    } @else if $min==0 and $max !=0 {
+      $query: "(max-width: #{$max})";
+    }
+
+    @media #{$query} {
+      @content;
+    }
+  }
+}
+
+/*=================================
+=            BOOTSTRAP            =
+==================================*/
+
+@mixin bootstrap($min) {
+  /********  EXTRA SMALL ********/
+  @if $min==xs {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+
+  /******** SMALL ********/
+  @if $min==smdown {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $min==smonly {
+    @media (min-width: 576px) and (max-width: 768px) {
+      @content;
+    }
+  } @else if $min==sm {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+
+  /********  MEDIUM ********/
+  @if $min==mddown {
+    @media (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $min==mdonly {
+    @media (min-width: 768px) and (max-width: 992px) {
+      @content;
+    }
+  } @else if $min==md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  /********  LARGE ********/
+  @if $min==lgdown {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $min==lgonly {
+    @media (min-width: 992px) and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $min==lg {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  /********  EXTRA LARGE ********/
+  @if $min==lgdown {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $min==lgonly {
+    @media (min-width: 992px) and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $min==lg {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+}

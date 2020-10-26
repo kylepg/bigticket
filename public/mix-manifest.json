@@ -1,4 +1,12 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/render-assets/draft/draft.js": "/render-assets/draft/draft.js",
+    "/render-assets/draft/draft.css": "/render-assets/draft/draft.css",
+    "/render-assets/team/career-center/career-center.css": "/render-assets/team/career-center/career-center.css",
+    "/render-assets/team/career-center/blog.css": "/render-assets/team/career-center/blog.css",
+    "/render-assets/render/tailwind.css": "/render-assets/render/tailwind.css",
+    "/render-assets/render.js": "/render-assets/render.js",
+    "/render-assets/team/career-center/blog.js": "/render-assets/team/career-center/blog.js",
+    "/render-assets/team/career-center/career-center.js": "/render-assets/team/career-center/career-center.js"
 }
